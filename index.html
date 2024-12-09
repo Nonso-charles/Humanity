@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css    ">
+</head>
+
+<body>
+    <nav class="navbar">
+    <ul class="sidebar">
+    <li class="close-btn" onclick="hideSideBar()"><img src="interface.png" alt="interface.png" class="close"></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Team</a></li>
+    </ul> 
+        <ul>
+        <li><img src="health.png" alt="" class="logo-icon"></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Features</a></li>
+        <li class="hideOnMobile"><a href="#">Pricing</a></li>
+        <li class="hideOnMobile"><a href="#">Gallery</a></li>
+        <li class="hideOnMobile"><a href="#">Team</a></li>
+        <li class="toggle-btn" onclick="showSideBar()"><img src="menu.png" alt="menu" class="menu-toggle"></li>
+    </ul>
+    
+    </nav>  
+    
+    <section class="hero">
+        <div class="hero-text">
+      <h1>Empowering Lives, One Home at a time</h1>
+      <p>Supporting Communities with professional care and inclusive programs</p>
+      <button class="btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    <div class="hero-image">
+     <img src="hero-img.png" alt="">   
+    </div>
+    </section>
+    
+    <section class="services">
+     <h1 class="services-heading">Our Services</h1> 
+     <p class="services-subtext">Check out our services, created to help individuals thrive and build a stronger, supportive community</p>
+     <div class="services-container">
+     <div class="image-container">
+        <img src="service-img1.png" alt="" class="service-img">
+     </div>
+     <div class="services-text">
+        <h1>Resident and Staff Interactions</h1>
+        <p>Photos of residence interacting with supportive staff, enjoying meals together participating in activities like art and craft or outdoor exercises, and sharing moments of care and connection. These images should reflect a warm inclusive enviroment where individuals feels valued</p>
+    <button class="service-btn">Get Started  <i class="fa-solid fa-arrow-right"></i></button>
+     </div>
+     </div>
+         <div class="services-container">
+         <div class="image-container">
+             <img src="service-img2.png" alt="" class="service-img">
+         </div>
+         <div class="services-text">
+             <h1>Community Engagement</h1>
+             <p>Images of group activities such as board games, where residents and staffs works together to create a vibrant space. That brings everyone together for fun and laughter, or community outing that foster connections and new experiences. These images should capture moment of joy,teamwork and the sense of belongings that creates for the community </p>
+             <button class="service-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+         </div>
+     </div>
+            <div class="services-container">
+             <div class="image-container">
+                 <img src="service-img3.png" alt="" class="service-img">
+             </div>
+             <div class="services-text">
+                 <h1>Diverse Representation</h1>
+                 <p>Images of group activities such as board games, where residents and staffs works together to create a vibrant space. That brings everyone together for fun and laughter, or community outing that foster connections and new experiences. These images should capture moment of joy,teamwork and the sense of belongings that creates for the community </p>
+                 <button class="service-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+             </div>
+         </div>
+    </section>
+    
+    <section class="features" id="features">
+  <div class="features-container">
+    <h2 class="section-title">Our Program Features</h2>
+    <p class="section-subtitle">Empowering the community through innovative initiatives.</p>
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <div class="feature-item">
+        <img src="workshop.png" alt="Education Programs" class="feature-icon">
+        <h3>Education Programs</h3>
+        <p>Providing access to quality education and skill-building workshops for all ages.</p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="feature-item">
+        <img src="healthcare.png" alt="Health & Wellness" class="feature-icon">
+        <h3>Health & Wellness</h3>
+        <p>Promoting physical and mental well-being with regular health initiatives.</p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="feature-item">
+        <img src="handshake.png" alt="Community Engagement" class="feature-icon">
+        <h3>Community Engagement</h3>
+        <p>Encouraging volunteerism and participation in community-building events.</p>
+      </div>
+      <!-- Feature 4 -->
+      <div class="feature-item">
+        <img src="innovation.png" alt="Sustainability Projects" class="feature-icon">
+        <h3>Sustainability Projects</h3>
+        <p>Innovative solutions for environmental conservation and green initiatives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
