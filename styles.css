@@ -215,6 +215,74 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     font-size: 1.5rem;
 }
 
+/*------ Testimonial Section-----*/
+.testimonials-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #3fa564;
+    margin-top: 50px;
+}
+
+.testimonials-section h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background-color: #fffbea;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Quote Icon */
+.quote-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+/* Blockquote */
+blockquote {
+    font-size: 16px;
+    font-style: italic;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 0;
+    object-fit: cover;
+}
+
+/* Author Name */
+.author {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.author span {
+    font-weight: normal;
+    color: #777;
+    font-size: 14px;
+}
+
+
 
 @media (max-width: 768px) {
               .hideOnMobile {
@@ -267,9 +335,9 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         width: 80%;
     }
     
-    
-}
+    /*----- Testimonial Section -----*/
 
+}
 
     @media(max-width: 400px) {
         .sidebar {
@@ -279,4 +347,22 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         .toggle-btn {
             display: block;
         }
+        
     }
+    
+    
+    @media (min-width: 768px) {
+    .testimonials-section {
+        flex-wrap: nowrap;
+    }
+
+    .testimonial-card {
+        width: 22%;
+    }
+}
+
+/* Animation for Cards */
+.testimonial-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
